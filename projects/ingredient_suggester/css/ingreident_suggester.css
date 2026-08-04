@@ -1,0 +1,393 @@
+:root {
+    --color-purble-50: #faf2ff;
+    --color-purble-100: #efe8ff;
+    --color-purble-200: #e2dbf8;
+    --color-purble-300: #cfc8e4;
+    --color-purble-400: #a9a2be;
+    --color-purble-500: #87819c;
+    --color-purble-600: #605a73;
+    --color-purble-700: #4d4860;
+    --color-purble-800: #2f2b41;
+    --color-purble-900: #100820;
+
+    --color-green-50: #e6f4eb;
+    --color-green-100: #c2e5ce;
+    --color-green-200: #9bd4af;
+    --color-green-300: #72c490;
+    --color-green-400: #52b77a;
+    --color-green-500: #2eab63;
+    --color-green-600: #279c59;
+    --color-green-700: #1e8a4d;
+    --color-green-800: #177942;
+    --color-green-900: #0a5a2e;   
+
+    --color-red-900: #bb1b27;
+    --color-red-800: #ca2733;
+    --color-red-700: #d72e3a;
+    --color-red-600: #e93841;
+    --color-red-500: #f84142;
+    --color-red-400: #f2535a;
+    --color-red-300: #e6747b;
+    --color-red-200: #f09ba0;
+    --color-red-100: #ffced5;
+    --color-red-50:  #ffebef;
+
+    --color-beige: #FFD19D;
+
+}
+
+body {
+    background: var(--color-purble-900);
+
+
+}
+
+
+.tutorial {
+    grid-column: span 2;
+
+
+}
+
+.tutorial h2 {
+    font-size: x-large;
+}
+
+
+.description {
+    grid-column-start: 2;
+}
+
+.program {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-start: 2;
+    gap: 2rem;
+    align-items: start;
+}
+
+
+
+.pick-model {
+    grid-column-start: span 2;
+
+
+}
+
+.model-selector {
+    display: flex;
+    justify-content: space-between;
+}
+
+.model-selector label {
+    align-self: center;
+    padding: 1rem;
+
+    width: auto;
+
+    color: #2f2b41;
+    background: var(--color-green-200);
+
+    border-top-left-radius: 1rem;
+}
+
+
+.model-selector select {
+    width: 100%;
+
+    padding: 0.5rem;
+    border: 1px solid var(--color-darkpurble);
+    border-radius: 4px;
+    background-color: var(--color-green-50);
+    font-size: 1rem;
+    color: var(--color-green-900);
+    transition: border-color 0.2s;
+    }
+
+    .model-selector select:focus {
+        border-color: var(--color-darkpurble);
+}
+
+
+.info {
+    background-color: var(--color-green-100);
+    height: 5rem;
+    padding: 1rem;
+}
+
+.parameters {
+    background-color: var(--color-green-200);
+    height: 7rem;
+    padding: 1rem;
+}
+
+.parameters p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+.suggestions {
+    color: var(--color-purble-900);
+
+    background-color: var(--color-green-300);
+    height: 25vh;
+    padding: 1rem;
+
+    overflow-y: scroll;
+}
+
+.suggestions p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.selected-ingreidents {
+    grid-column: span 3;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients {
+    color: var(--color-purble-900);
+
+    height: 20rem;
+    background-color: var(--color-green-50);
+    padding: 1em;
+}
+
+.ingredients p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.commands {
+    gap: 0.5rem;
+    display: flex;
+    justify-content: end;
+}
+
+.save-btn {
+    color: var(--color-green-50);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: var(--color-green-800);
+
+}
+
+
+
+.save-btn:hover,
+.save-btn:focus {
+    background-color: var(--color-green-600);
+}
+
+
+
+.export-btn {
+    color: var(--color-green-50);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: var(--color-purble-700);
+
+}
+
+
+
+.export-btn:hover,
+.export-btn:focus {
+    background-color: var(--color-purble-500);
+}
+
+.values {
+    border: 1px solid var(--color-darkpurble);
+    height: 30rem;
+    grid-column: span 2;
+    overflow-y: scroll;
+
+    padding: 1rem;
+}
+
+.values p {
+    margin: 0;
+
+}
+
+.ingredient-list {
+    display: flex;
+    justify-content: left;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+
+.ingredient {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0.2rem 0.2rem 0;
+    padding: 0;
+    border-radius: 2rem;
+    background-color: var(--color-green-400);
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.ingredient p {
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0.4rem 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    background: transparent;
+}
+
+/* Hover effect for ingredient */
+
+
+.light {
+    color: var(--color-purble-900);
+    background: var(--color-green-50);
+}
+.light:hover,
+.light:focus {
+    background-color: var(--color-green-300);
+    color: var(--color-green-50);
+}
+
+.dark {
+    color: var(--color-purble-900);
+    background: var(--color-green-500);
+    transition: background 0.2s;
+}
+.dark:hover,
+.dark:focus {
+    background-color: var(--color-purble-900);
+    color: var(--color-green-50);
+}
+
+
+.error {
+    color: var(--color-purble-100);
+    background: var(--color-red-700);
+    transition: background 0.2s;
+}
+.error:hover,
+.error:focus {
+    background-color: var(--color-purble-900);
+    color: var(--color-green-50);
+}
+
+.bg-dark {
+    background: var(--color-purble-900);
+    color: var(--color-purble-50);
+}
+
+
+
+
+
+.form-controll {
+    display: flex;
+
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider {
+  -webkit-appearance: none; /* Remove default styling */
+  appearance: none;
+  height: 6px;
+  width: 75%;
+  background: #ddd;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background: var(--color-darkpurble);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+/* Firefox */
+.slider::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background: var(--color-darkpurble);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+
+.input-container {
+    color: var(--color-purble-900);
+    display: flex;
+    gap: 0.5em;
+}
+
+
+    .input {
+      position: relative;
+      width: 100%;
+    }
+
+    .input input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      border: 1px solid #ccc;
+      border-top: none;
+      max-height: 20rem;
+      overflow-y: auto;
+      z-index: 10;
+    }
+
+    .dropdown div {
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .dropdown div:hover {
+      background-color: #f0f0f0;
+    }
+
+
+    .mr-1 {
+        margin-right: 2rem;
+    }
+
+
+

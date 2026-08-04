@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Yukon Solitare</title>
+
+    <script type="module" src="js/main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+<div>
+    <p class="ascii title">
+__/\\\________/\\\__/\\\________/\\\__/\\\________/\\\_______/\\\\\_______/\\\\\_____/\\\_______________/\\\\\\\\\\\_________/\\\\\_______/\\\______________/\\\\\\\\\\\__/\\\\\\\\\\\\\\\_____/\\\\\\\\\_____/\\\\\\\\\\\____/\\\\\\\\\______/\\\\\\\\\\\\\\\_
+__\///\\\____/\\\/__\/\\\_______\/\\\_\/\\\_____/\\\//______/\\\///\\\____\/\\\\\\___\/\\\_____________/\\\/////////\\\_____/\\\///\\\____\/\\\_____________\/////\\\///__\///////\\\/////____/\\\\\\\\\\\\\__\/////\\\///___/\\\///////\\\___\/\\\///////////__
+_____\///\\\/\\\/____\/\\\_______\/\\\_\/\\\__/\\\//_______/\\\/__\///\\\__\/\\\/\\\__\/\\\____________\//\\\______\///____/\\\/__\///\\\__\/\\\_________________\/\\\___________\/\\\________/\\\/////////\\\_____\/\\\_____\/\\\_____\/\\\___\/\\\_____________
+________\///\\\/______\/\\\_______\/\\\_\/\\\\\\//\\\______/\\\______\//\\\_\/\\\//\\\_\/\\\_____________\////\\\__________/\\\______\//\\\_\/\\\_________________\/\\\___________\/\\\_______\/\\\_______\/\\\_____\/\\\_____\/\\\\\\\\\\\/____\/\\\\\\\\\\\_____
+___________\/\\\_______\/\\\_______\/\\\_\/\\\//_\//\\\____\/\\\_______\/\\\_\/\\\\//\\\\/\\\________________\////\\\______\/\\\_______\/\\\_\/\\\_________________\/\\\___________\/\\\_______\/\\\\\\\\\\\\\\\_____\/\\\_____\/\\\//////\\\____\/\\\///////______
+____________\/\\\_______\/\\\_______\/\\\_\/\\\____\//\\\___\//\\\______/\\\__\/\\\_\//\\\/\\\___________________\////\\\___\//\\\______/\\\__\/\\\_________________\/\\\___________\/\\\_______\/\\\/////////\\\_____\/\\\_____\/\\\____\//\\\___\/\\\_____________
+_____________\/\\\_______\//\\\______/\\\__\/\\\_____\//\\\___\///\\\__/\\\____\/\\\__\//\\\\\\____________/\\\______\//\\\___\///\\\__/\\\____\/\\\_________________\/\\\___________\/\\\_______\/\\\_______\/\\\_____\/\\\_____\/\\\_____\//\\\__\/\\\_____________
+______________\/\\\________\///\\\\\\\\\/___\/\\\______\//\\\____\///\\\\\/_____\/\\\___\//\\\\\___________\///\\\\\\\\\\\/______\///\\\\\/_____\/\\\\\\\\\\\\\\\__/\\\\\\\\\\\_______\/\\\_______\/\\\_______\/\\\__/\\\\\\\\\\\_\/\\\______\//\\\_\/\\\\\\\\\\\\\\\_
+_______________\///___________\/////////_____\///________\///_______\/////_______\///_____\/////______________\///////////__________\/////_______\///////////////__\///////////________\///________\///________\///__\///////////__\///________\///__\///////////////__</p>
+</div>
+
+
+    <div class="grid">
+      <div class="backend">
+        
+<p class="ascii">   __|                         |       
+  (      _ \    \  (_-<   _ \  |   -_) 
+ \___| \___/ _| _| ___/ \___/ _| \___| 
+ 
+ .--------------------------------------------------------------.</p>
+
+        <div class="mid-console">
+            <div class="divider-ascii"><span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+            </div>
+            <div class="console" id="console">
+            </div>
+            <div class="divider-ascii"><span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+            </div>
+        </div>
+        <div>
+            <p>'---------------------------------------------------------------'</p>
+        </div>
+    </div>
+
+    <div id="deck-menu" class="deck-menu">
+
+        <div class="cmd-bar">
+            <div class="cmd-group">
+                <button class="cmd-btn ascii-btn" data-cmd="LD">.---------.
+|  load   |
+'---------'</button>
+                <span class="ascii-input">
+                    <span class="ascii-input__edge">--------------.</span>
+                    <span class="ascii-input__row"><input
+                        class="cmd-input" data-cmd="LD" type="text"
+                        placeholder="filename">|</span>
+                    <span class="ascii-input__edge">--------------'</span>
+                </span>
+            </div>
+            <div class="cmd-group">
+                <button class="cmd-btn ascii-btn" data-cmd="SD">.---------.
+|  save   |
+'---------'</button>
+                <span class="ascii-input">
+                    <span class="ascii-input__edge">--------------.</span>
+                    <span class="ascii-input__row"><input
+                        class="cmd-input" data-cmd="SD" type="text"
+                        placeholder="filename">|</span>
+                    <span class="ascii-input__edge">--------------'</span>
+                </span>
+            </div>
+            <div class="cmd-group">
+                <button class="cmd-btn ascii-btn" data-cmd="SI">.---------.
+|  split  |
+'---------'</button>
+                <span class="ascii-input ascii-input--sm">
+                    <span class="ascii-input__edge">------.</span>
+                    <span class="ascii-input__row"><input
+                        class="cmd-input" data-cmd="SI" type="number"
+                        min="1" max="52" placeholder="1-52">|</span>
+                    <span class="ascii-input__edge">------'</span>
+                </span>
+            </div>
+            <div class="cmd-group">
+                <button class="cmd-btn ascii-btn" data-cmd="SR">.---------.
+| shuffle |
+'---------'</button>
+            </div>
+            <div class="cmd-group">
+                <button class="cmd-btn ascii-btn" data-cmd="SW">.---------.
+|  show   |
+'---------'</button>
+            </div>
+            <div class="cmd-group">
+                <button class="cmd-btn ascii-btn" data-cmd="P">.---------.
+|  play   |
+'---------'</button>
+            </div>
+
+        </div>
+
+
+        <div id="deck" class="deck">
+
+        </div>
+    </div>
+
+    <div id="game" class="game">
+
+        <div class="cmd-bar">
+            <button class="cmd-btn ascii-btn" data-cmd="P">.---------.
+| Restart |
+'---------'</button>
+            <button class="cmd-btn ascii-btn" data-cmd="Q">.---------.
+|  Quit   |
+'---------'</button>
+        </div>
+        ---------------------------------------------------------------
+        <div>
+            Foundations
+        </div>
+        <div class="foundation-container">
+            <div class="foundation"></div>
+            <div class="foundation"></div>
+            <div class="foundation"></div>
+            <div class="foundation"></div>
+        </div>
+
+
+        <div>
+            Tableau
+        </div>
+        <div class="col-container">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+    </div>
+
+
+      <div class="guide">
+        <p class="ascii">  |  |                   |                  |              
+  __ |   _ \ \ \  \ /     _|   _ \     _ \  |   _` |  |  | 
+ _| _| \___/  \_/\_/    \__| \___/    .__/ _| \__,_| \_, | 
+                                     _|              ___/  
+---------------------------------------------------------------</p>
+
+        <div>
+            <h3>Objective</h3>
+            <p>Move all cards to the four foundation piles, building each suit from Ace to King.</p>
+
+            <h3>Gameplay</h3>
+            <ul>
+                <li>Build cards downward in alternating colors (red on black, black on red).</li>
+                <li>Move any face-up card with all cards stacked on top of it.</li>
+                <li>Moved stacks do not need to be in sequence.</li>
+                <li>A move is valid if the bottom card follows the alternating color rule.</li>
+                <li>Turn over face-down cards when they are uncovered.</li>
+                <li>Any card or stack can be moved into an empty column.</li>
+            </ul>
+
+            <h3>Foundations</h3>
+            <p>Build up by suit from Ace to King.</p>
+
+            <h3>Winning</h3>
+            <p>You win when all cards are placed in the foundation piles in the correct order.</p>
+
+
+            ------------------------------------------------------------------------
+
+            <p>*The original game was using a c program as a backend, in this version the backend is replaced with js</p>
+            <p>to see the orignial version go to this repo: <a href="https://github.com/tobiasras/Yukon_solitare">Github repo</a></p>
+            <p>Made in collaboriation with: <a href="https://github.com/Rasmussw">Rasmussw</a></p>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

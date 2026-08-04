@@ -1,0 +1,248 @@
+
+.guide {
+    justify-self: end;;
+}
+
+.title {
+    margin: 0;
+
+}
+
+p {
+    margin: 0;
+}
+
+:root {
+        font-size: clamp(8px, 1.5vw, 10px);
+}
+
+body {
+    background: #ffffff;
+    font-family: monospace;
+
+    color: rgb(0, 0, 0);
+    margin: 0;
+
+    padding-top: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.card {
+    -webkit-user-select: none;
+    user-select: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    cursor: grab;
+}
+
+.card:active {
+    cursor: grabbing;
+}
+
+.card.dragging {
+    opacity: 0.35;
+}
+
+.drag-ghost {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    font-family: monospace;
+    white-space: pre;
+    background: #ffffff;
+    padding: 0.25rem;
+    pointer-events: none;
+}
+
+.drag-ghost .card {
+    margin: 0;
+}
+
+.drop-active {
+    outline: 2px dashed #2a7;
+    outline-offset: 4px;
+    background: rgba(42, 119, 119, 0.06);
+}
+
+.foundations {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    column-gap: 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ascii {
+    white-space: pre;
+    font-family: monospace;
+}
+
+.grid {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+h3 {
+    font-size: 1rem;
+
+}
+
+.deck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+
+
+}
+
+
+.mid-console {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    width: 36rem;
+}
+
+.divider-ascii {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hide {
+    display: none;
+}
+
+.console {
+    padding: 1rem;
+    height: 40rem;
+    overflow-y: scroll;
+}
+
+.foundation-container {
+    display: flex;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.foundation {
+    min-width: 8ch;
+    min-height: 6em;
+}
+
+.col-container {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.column {
+    min-width: 8ch;
+    min-height: 6em;
+}
+
+
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.ascii-btn {
+    font-family: monospace;
+    white-space: pre;
+    background: white;
+    color: black;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+
+/* pressed effect */
+.ascii-btn:active {
+    transform: translate(1px, 1px);
+}
+
+.ascii-btn:hover {
+    color: #2a7;
+}
+
+.cmd-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.cmd-group {
+    display: flex;
+    align-items: center;
+}
+
+.cmd-btn {
+    font-family: monospace;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cmd-input {
+    font-family: monospace;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+
+    font-size: 1rem;
+}
+
+.cmd-input[type=number] {
+    width: 3.3rem;
+}
+
+.cmd-input[type=text] {
+    width: 7.7rem;
+}
+
+
+.ascii-input {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: monospace;
+    color: black;
+
+}
+
+.ascii-input__edge {
+    white-space: pre;
+}
+
+.ascii-input__row {
+    width: 3rem;
+    white-space: pre;
+    margin: 0;
+}
+
+.ascii-input:focus-within {
+    color: #2a7;
+}

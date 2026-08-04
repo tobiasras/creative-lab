@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+          }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="menu">
+            <div class="slide-menu open" id="slideMenu">
+                <div class="menu-content">
+                    <div class="text">
+                        <h1>Chess^3</h1>
+                        <p>In this chess game, the board consist of a cube. pieces can move across the cubes 6 sides.<br><br> The pawns can move 1 square in each direction but can only attack diagonly, and they cant promote</p>
+                        <br>
+                        <p>The Queen, Bishop, Knight, and Rook all move like normal chess</p>
+
+                        <br>
+                        <p class="small">Free play: No turns, free to move the pieces regardless of turn order</p>
+                        <p class="small">Normal play: 1v1, with turns</p>
+                    </div>
+
+
+                    <div class="buttons">
+                        <button id="start-normal-play">Normal play</button>
+                        <button id="free-play">Free play</button>
+                    </div>
+                </div>
+
+                <a class="menu-toggle" href="#">
+                    <span class="menu-icon material-symbols-outlined">menu</span>
+                </a>
+            </div>
+
+
+            <a class="menu-toggle" href="">
+                <span class="menu-icon material-symbols-outlined">menu</span>
+            </a>
+        </div>
+
+        <div class="nav">
+            <button class="side side-1"><canvas class="side-canvas canvas-1"></canvas></button>
+            <button class="side side-2"><canvas class="side-canvas canvas-2"></canvas></button>
+            <button class="side side-3"><canvas class="side-canvas canvas-3"></canvas></button>
+            <button class="side side-4"><canvas class="side-canvas canvas-4"></canvas></button>
+            <button class="side side-5"><canvas class="side-canvas canvas-5"></canvas></button>
+            <button class="side side-6"><canvas class="side-canvas canvas-6"></canvas></button>
+        </div>
+
+
+
+        <div class="gamebar">
+            <div hidden id="player-turn" class="player-turn">
+                <p>White's turn</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <main class="container"></main>
+
+
+
+</body>
+
+
+
+
+
+<script defer type="module" src="./js/index.js"></script>
+
+</html>

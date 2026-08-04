@@ -1,0 +1,733 @@
+Ingredient,Count
+milk,1367
+onion,1355
+salt,1346
+pepper,884
+potatoes,671
+celery,490
+water,361
+butter,234
+carrots,192
+bacon,178
+chicken,167
+cream of mushroom soup,154
+flour,144
+parsley,141
+ground beef,124
+green pepper,118
+cream of chicken soup,109
+chicken broth,107
+cheddar cheese,96
+parsley flakes,94
+oleo,80
+bread crumbs,79
+velveeta cheese,76
+cream cheese,75
+carrot,66
+worcestershire sauce,63
+corn,59
+paprika,59
+broccoli,54
+rice,54
+mushrooms,54
+sour cream,51
+hamburger,48
+american cheese,48
+cream of celery soup,47
+mushroom soup,46
+noodles,44
+thyme,43
+whole kernel corn,42
+horseradish,41
+cornstarch,41
+cheese,38
+chicken bouillon cubes,38
+grated cheese,36
+ham,36
+catsup,36
+condensed cream,35
+cream-style,34
+pimento,33
+pork chops,33
+all-purpose,31
+swiss cheese,31
+parmesan cheese,30
+garlic,30
+tomato soup,30
+bell pepper,29
+clove garlic,28
+almonds,27
+garlic powder,26
+mayonnaise,26
+clams,25
+potato,25
+basil,25
+crabmeat,25
+lean ground beef,24
+boiling water,24
+oil,24
+tuna,23
+bay leaf,21
+black pepper,21
+ground chuck,21
+sage,20
+egg noodles,20
+macaroni,20
+cracker crumbs,20
+cheddar cheese soup,19
+cabbage,19
+bread,19
+croutons,19
+stalks celery,18
+garlic salt,18
+shredded cheese,18
+frozen peas,18
+crab meat,18
+frozen broccoli,18
+nutmeg,17
+vinegar,17
+tomato sauce,17
+oregano,17
+sausage,17
+ketchup,16
+shortening,15
+pimiento,15
+dry mustard,15
+tomatoes,15
+shrimp,14
+pork sausage,14
+chives,14
+chicken breasts,14
+salt pork,14
+lemon juice,13
+cream-style horseradish,13
+light cream,13
+green peppers,13
+salmon,13
+cream of mushroom,13
+chili powder,13
+walnuts,13
+cream-style corn,13
+oats,12
+kernel corn,12
+egg whites,12
+turkey,12
+dill weed,12
+elbow macaroni,12
+zucchini,12
+celery salt,11
+white pepper,11
+mustard,11
+egg,11
+red pepper,11
+crackers,11
+onions,11
+fish,10
+fresh parsley,10
+tomato,10
+crescent rolls,10
+dill,10
+water chestnuts,10
+peas,10
+poultry seasoning,10
+chicken stock,10
+olive oil,10
+cooking oil,9
+bisquick,9
+tabasco sauce,9
+cream of chicken,9
+cream,9
+green beans,9
+beef,9
+cheddar,9
+cauliflower,9
+ground meat,8
+sharp cheese,8
+chili sauce,8
+green chilies,8
+soy sauce,8
+miracle,8
+cayenne pepper,8
+chicken bouillon,8
+cottage cheese,8
+vegetable oil,8
+whipping cream,8
+mushroom stems,7
+head cabbage,7
+biscuit mix,7
+egg yolks,7
+heavy cream,7
+curry powder,7
+brown sugar,7
+cream of potato soup,7
+pimentos,7
+marjoram,7
+frozen hash browns,7
+baking powder,6
+white wine,6
+salad oil,6
+hamburg,6
+potato chips,6
+mozzarella cheese,6
+rolled oats,6
+oatmeal,6
+flaked crabmeat,6
+philadelphia cream cheese,6
+sugar,6
+tomato juice,6
+rosemary,6
+vegetable cooking spray,6
+fresh corn,6
+caraway seed,6
+condensed chicken broth,6
+corned beef,6
+salad dressing,5
+frozen tater,5
+ground lean beef,5
+yellow squash,5
+cayenne,5
+ground pork,5
+celery stalks,5
+mild cheese,5
+cheese soup,5
+fresh broccoli,5
+worcestershire,5
+chicken bouillon granules,5
+green onions,5
+mushroom,5
+haddock,5
+allspice,4
+frozen mixed vegetables,4
+celery soup,4
+lemon,4
+processed cheese,4
+white bread,4
+corn flakes,4
+sherry,4
+bacon drippings,4
+corn flake crumbs,4
+regular rice,4
+velveeta,4
+bacon grease,4
+mayo,4
+parsley sprigs,4
+seasoning,4
+oysters,4
+green onion,4
+chicken flavor,4
+olives,4
+bacon bits,4
+buttered bread crumbs,4
+baking potatoes,4
+pastry,4
+barbecue sauce,4
+lobster,4
+green bell pepper,3
+cucumbers,3
+low-fat cottage cheese,3
+accent,3
+corn kernels,3
+leeks,3
+ro-tel tomatoes,3
+instant rice,3
+ham bone,3
+boneless pork,3
+pork,3
+process cheese,3
+soda crackers,3
+slivered almonds,3
+veal,3
+ground turkey,3
+egg substitute,3
+bacon fat,3
+white rice,3
+flour tortillas,3
+cold water,3
+instant chicken,3
+saltine crumbs,3
+ground venison,3
+frozen corn,3
+spaghetti,3
+ground nutmeg,3
+tomato paste,3
+potato flakes,3
+mushroom pieces,3
+english peas,3
+dill pickles,3
+shredded monterey jack cheese,3
+red potatoes,3
+lemon pepper,3
+nuts,3
+cream of broccoli soup,3
+tuna fish,3
+ready,3
+ground ham,3
+ground veal,3
+yellow mustard,3
+mixed vegetables,3
+cornflake crumbs,3
+freshly ground pepper,3
+long grain rice,3
+american,3
+crust,3
+vegetables,2
+beets,2
+vegetable soup,2
+wheaties,2
+rigatoni,2
+fresh broccoli florets,2
+fine cracker crumbs,2
+pie crust,2
+lean pork chops,2
+saltines,2
+shell macaroni,2
+miracle whip,2
+cream style corn,2
+bean sprouts,2
+mein noodles,2
+cashews,2
+refrigerated biscuits,2
+dressing,2
+beans,2
+lasagna noodles,2
+olive,2
+red,2
+ricotta cheese,2
+fresh chives,2
+ground red pepper,2
+powdered mustard,2
+kidney beans,2
+beef bouillon,2
+white bread crumbs,2
+green peas,2
+cornbread crumbs,2
+dill pickle,2
+aig,2
+fat,2
+gelatin,2
+egg beaters,2
+frozen lima beans,2
+ground allspice,2
+asparagus,2
+lean pork,2
+round steak,2
+white onions,2
+pepper sauce,2
+unsalted butter,2
+frozen green beans,2
+frozen green peas,2
+bouillon cube,2
+beef broth,2
+flaky biscuits,2
+taco sauce,2
+ground cumin,2
+clam juice,2
+peppercorns,2
+white potatoes,2
+corn oil,2
+broth,2
+frankfurters,2
+tater,2
+chinese noodles,2
+apple,2
+chicken breast,2
+long grain,2
+seasoning salt,2
+bouillon,2
+boneless chicken,2
+frozen california,2
+fryer,2
+wild rice,2
+nacho cheese soup,2
+colby cheese,2
+cornbread,2
+onion powder,2
+corn bread,2
+leftover mashed potatoes,2
+grape jelly,2
+ground sage,2
+lump crabmeat,2
+crisp lettuce,2
+fully cooked ham,2
+fresh dill,2
+bread cubes,2
+crescent dinner rolls,2
+whipped cream,2
+corn tortillas,2
+shell,2
+chicken soup,2
+corn chips,2
+biscuits,2
+parkay margarine,2
+freshly ground black pepper,2
+steak,2
+liquid,2
+white crab meat,2
+buns,2
+cucumber,2
+cream chicken soup,2
+peppers,2
+thin noodles,2
+onion salt,2
+bouillon cubes,2
+navy beans,2
+swiss,2
+mace,2
+sweet peas,2
+mozzarella,2
+baking mix,2
+pecans,2
+head cauliflower,2
+ground thyme,2
+cocktail shrimp,1
+sweet butter,1
+minute rice,1
+fresh thyme,1
+spray,1
+hot shortening,1
+vermicelli,1
+whole wheat toast,1
+yogurt,1
+celery powder,1
+tortillas,1
+chili peppers,1
+green noodles,1
+frozen broccoli flowerets,1
+sliced cheese,1
+t,1
+northern beans,1
+cream of tomato soup,1
+marjoram leaves,1
+saltine crackers,1
+jalapeno pepper,1
+summer sausage,1
+ham steak,1
+frozen vegetable mix,1
+picante sauce,1
+breadcrumbs,1
+bran,1
+refrigerator crescent,1
+cream of celery,1
+frozen fish,1
+roast,1
+mayonaise,1
+bacon fried crisp,1
+pea beans,1
+regular uncooked rice,1
+processed cheese spread,1
+head broccoli,1
+crisp salad greens,1
+soda cracker crumbs,1
+cheese slices,1
+fresh broccoli flowerets,1
+fresh baby carrots,1
+chicken white meat,1
+jumbo pasta shells,1
+pats of butter,1
+frozen carrots,1
+frozen california vegetables,1
+herb stuffing mix,1
+white chicken,1
+chop suey vegetables,1
+leftover ham,1
+bacon strips,1
+chicken with rice soup,1
+hearts,1
+light mayonnaise,1
+cream celery soup,1
+cream of celery soup or cream of chicken soup,1
+liquid sweetener,1
+clove,1
+clam chowder,1
+canadian bacon,1
+cold,1
+butter buds,1
+chicken meat,1
+pet-ritz deep dish pie crust,1
+poppy seed,1
+black peppercorn,1
+ham cubes,1
+hash brown potato,1
+ground pepper,1
+bass,1
+cream of asparagus soup,1
+cajun seasoning,1
+french fried onions,1
+slivered blanched almonds,1
+bay,1
+chicken base,1
+haddock fillets,1
+bonnet margarine,1
+nonstick cooking spray,1
+couscous,1
+baby clams,1
+head,1
+sauce,1
+browns,1
+block cheese,1
+whipping,1
+sweetener,1
+campbell's condensed cream of mushroom soup,1
+crisp bacon,1
+corn meal,1
+nonstick spray coating,1
+doritos,1
+enchilada sauce,1
+kellogg's corn,1
+your favorite barbecue sauce,1
+bay seafood seasoning,1
+frozen hash brown potatoes,1
+tomato puree,1
+homemade noodles,1
+spaghetti sauce,1
+tbsp.butter,1
+corn muffin,1
+low-fat sour cream,1
+kellogg,1
+canola oil,1
+campbell's mushroom soup,1
+angel hair pasta,1
+barley,1
+fresh cilantro,1
+fresh shrimp,1
+red bell pepper,1
+cauliflowerets,1
+ro-tel,1
+yellow pepper,1
+bisquick baking,1
+frozen vegetables,1
+pimiento pepper,1
+linguine,1
+molasses,1
+beef consomme,1
+sprinkles,1
+campbell's cheddar cheese soup,1
+shredded sharp cheddar cheese,1
+boneless pork loin,1
+celery tops,1
+cream corn,1
+frozen noodles,1
+ground sausage,1
+tomato slices,1
+sausage meat,1
+fries,1
+italian seasoning,1
+sweet yellow pepper,1
+sweet red pepper,1
+grated sharp,1
+chicken seasoning,1
+corn starch,1
+whole wheat bread crumbs,1
+mint,1
+niblets corn,1
+peanuts,1
+peanut butter,1
+peanut oil,1
+chez,1
+buttah,1
+radish,1
+lemon zest,1
+new,1
+red kidney,1
+chicken flavored bouillon granules,1
+clam liquor,1
+sweet potatoes,1
+parsnips,1
+lemon rind,1
+applesauce,1
+tortilla chips,1
+crisp,1
+old-fashioned oatmeal,1
+liquid smoke flavoring,1
+buttermilk,1
+buttered crumbs,1
+russet potatoes,1
+country-style pork ribs,1
+nonfat powdered milk,1
+chicken broth granules,1
+head garlic,1
+virgin olive oil,1
+pastry shell,1
+bitters,1
+bell peppers,1
+sweet basil,1
+farina,1
+pickle relish,1
+pan drippings,1
+instant mashed potatoes,1
+crisp fried bacon,1
+sweet pickles,1
+bbq sauce,1
+tarragon leaves,1
+tarragon vinegar,1
+white corn,1
+taco seasoning mix,1
+longhorn cheese,1
+vegetable stock,1
+romano cheese,1
+fresh linguine,1
+green,1
+white fish,1
+light cheese,1
+raisins,1
+red and,1
+tomato catsup,1
+ground lamb,1
+pared,1
+freshly ground white pepper,1
+crab,1
+sweet pepper,1
+pork sausage meat,1
+pizza sauce,1
+pepperoni,1
+lemon jello,1
+lite mayonnaise,1
+lite cream cheese,1
+celery flakes,1
+wine vinegar,1
+bulk sausage,1
+chickens,1
+vegeburger,1
+corn niblets,1
+gravy,1
+cranberry sauce,1
+tarragon,1
+cubed cheese,1
+cloves,1
+vegetable flakes,1
+fresh green beans,1
+onion flakes,1
+whip cream,1
+mashed potatoes,1
+campbell's cream,1
+peeled shrimp,1
+crisco,1
+eggs,1
+uncle ben's,1
+stalk celery,1
+baby carrots,1
+frozen pie crusts,1
+hock,1
+white beans,1
+italian parsley,1
+cheddar soup,1
+brandy,1
+lobster meat,1
+boiling chicken broth,1
+baking potato,1
+crumbs,1
+sweet cream butter,1
+cooked lentils,1
+nonfat sour cream,1
+low-fat chicken broth,1
+pasta,1
+campbell's condensed cream of chicken soup,1
+blanched almonds,1
+bamboo shoots,1
+green spring onions,1
+armour dried beef,1
+ground round,1
+condensed cream soup,1
+cinnamon,1
+ground lean pork,1
+wieners,1
+eggplant,1
+sweet pickle relish,1
+made pie shell,1
+turmeric,1
+stalks green onions,1
+wide egg noodles,1
+white crabmeat,1
+seafood,1
+ham slice,1
+crumbled cornbread,1
+seafood seasoning,1
+ground,1
+handful,1
+pimientos,1
+cream of chicken soup or cream of mushroom soup,1
+potato slices,1
+salad macaroni,1
+stuffing mix,1
+parmesan,1
+catfish fillets,1
+potato soup,1
+lime,1
+hot sauce,1
+potato cubes,1
+fresh pumpkin,1
+hash brown potatoes,1
+green olives,1
+cream-style cottage cheese,1
+chicken mushroom soup,1
+dry great northern beans,1
+ground steak,1
+hot cooked rice,1
+curly noodles,1
+corn with liquid,1
+nonfat cream cheese,1
+golden mushroom soup,1
+onion soup,1
+chicken breast halves,1
+cook rice,1
+very lean ground beef,1
+chunky salsa,1
+chips,1
+frozen spinach,1
+burger,1
+hot fat,1
+crumbled biscuits,1
+saltine cracker crumbs,1
+butternut squash,1
+pet milk,1
+baking biscuit mix,1
+string beans,1
+unbaked pie crusts,1
+pearl onions,1
+corn bread crumbs,1
+red pimento,1
+cooking rice,1
+hot dogs,1
+frozen,1
+fresh oysters,1
+pork chop,1
+hot pepper sauce,1
+fish fillets,1
+chunk style tuna,1
+cooked crabmeat,1
+oyster crackers,1
+cold milk,1
+neufchatel cheese,1
+fettucini noodles,1
+salt meat,1
+frozen cream,1
+fresh cauliflower,1
+ground hamburger,1
+uncle ben,1
+sweet bell pepper,1
+cornflakes,1
+ground pork sausage,1
+broccoli flowerets,1
+dried marjoram,1
+mussels,1
+scallops,1
+hot water,1
+quahogs,1
+sweet corn,1
+instant mashed potato,1
+new potatoes,1
+bisquick original baking mix,1
+oyster,1
+bouillon granules,1
+cider vinegar,1
+cayenne red pepper,1
+fresh spinach,1
+cod fillets,1
+egg white,1
+minestrone soup,1
+frozen egg substitute,1
+grands biscuits,1
+all-purpose flour,1
+cream of celery soup or cream of mushroom soup,1
+grated carrot,1
+black olives,1

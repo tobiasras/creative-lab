@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+Elbasan&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="css/ingreident_suggester.css">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="c5e2e9f3-c1b4-4a1e-b12a-9b69d3bfbb9a"></script>
+
+
+    <script defer type="module" src="./js/index.js"></script>
+</head>
+
+<body>
+
+<!-- IS FIXED START -->
+<nav class="nav-container">
+    <div class="nav">
+        <a href="/" class="back-link">
+            <img src="/images/icons/back.svg" alt="GitHub">
+            <span>Back to portfolio</span>
+        </a>
+        <div class="nav-links bg-gloss frosted-text">
+            <a class="nav-icon" href="https://github.com/tobiasras"> <img src="/images/icons/github.svg" alt="GitHub"></a>
+            <a class="nav-icon" href="https://www.linkedin.com/in/tobiasras/"> <img src="/images/icons/linkedin.png" alt="LinkedIn" ></a>
+            <a class="nav-icon" href="https://www.instagram.com/tobiasras/"> <img src="/images/icons/instagram.svg" alt="LinkedIn"></a>
+        </div>
+    </div>
+</nav>
+<!-- IS FIXED END -->
+
+
+
+<section class="container bg-dark  nav-spacer">
+    <div class="description col-2">
+        <div>
+            <h1>Ingredient Suggester</h1>
+            <p>
+                This web app helps you discover new ingredient pairings based on what you already have. Just enter a
+                list of ingredients, and the model suggest ingredients that commonly go well together.
+            </p>
+            <p>I one-hot encoded recipe ingredients, reduced dimensionality using PCA, and performed clustering using multiple algorithms, including K-Means, Gaussian Mixture Models (GMM), and BIRCH.</p>
+
+            <p>Dataset used: <a href="https://recipenlg.cs.put.poznan.pl/">RecipeNGL</a></p>
+
+        </div>
+    </div>
+
+    <div class="program">
+        <div class="pick-model">
+            <div class="model-selector">
+                <label for="model-selector">Model:</label>
+                <select name="model" id="model-selector">
+                    <option value="birch_1_7">Birch Model (10 clusters)</option>
+                    <option value="birch_1_3">Birch Model (427 clusters)</option>
+                    <option value="kmeans_3">K-means (3 clusters)</option>
+                    <option value="gmm_10">Gmm (10 clusters)</option>
+                </select>
+
+            </div>
+            <div id="info" class="info">
+            </div>
+            <div class="suggestions">
+                <p>Suggestions:</p>
+                <div id="suggestion" class="ingredient-list"></div>
+            </div>
+        </div>
+
+
+        <div class="selected-ingreidents">
+            Select ingredients to add:
+            <div class="input-container">
+                <div class="input">
+                    <input type="text" id="searchInput" placeholder="Type ingredients..." autocomplete="off"/>
+                    <div class="dropdown" id="dropdown"></div>
+                </div>
+                <button id="add-btn" class="save-btn">add</button>
+            </div>
+
+
+            <div class="ingredients">
+                <p>Recipe:</p>
+                <div id="current-ingredients" class="ingredient-list">
+                </div>
+            </div>
+
+
+            <div class="commands">
+                <button id="reload" class="export-btn">reload</button>
+
+                <!--<button class="export-btn">Export to text</button>
+                <button class="save-btn">Save Recipe</button>-->
+            </div>
+        </div>
+
+
+        <div class="tutorial">
+            <h2>Guide:</h2>
+            <h3>How to use this:</h3>
+            <ul>
+                <li>Type some english ingredients under "Type ingredients" and press add.</li>
+                <li>After adding ingredients, the Chosen ML model, will suggest ingreditens that pair are common with the chossen</li>
+                <li>suggestions can be added to the recipe by pressing on them</li>
+                <li>The models work best after 3 or more ingredients has been chosen!</li>
+                <li>If an ingredient is show as red, it means that the ingredient is not recognized and it wont be used to suggest new ingredients</li>
+            </ul>
+
+            <h3>Selecting models:</h3>
+            <p>For this project 4 models have been created, to select a model do the following</p>
+            <ul>
+                <li>Go to model selection</li>
+                <li>Select from the 4 models</li>
+                <li>choosing a model, will automatically load it and suggest ingredients</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+</body>
+
+
+</html>

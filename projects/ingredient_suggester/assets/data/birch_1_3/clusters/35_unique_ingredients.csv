@@ -1,0 +1,634 @@
+Ingredient,Count
+flour,561
+onions,542
+salt,538
+tomatoes,316
+garlic,301
+celery,237
+pepper,227
+water,190
+carrots,166
+parsley,158
+potatoes,113
+oil,113
+green pepper,100
+thyme,97
+shrimp,86
+bay leaf,84
+worcestershire sauce,83
+bay leaves,81
+tomato sauce,80
+butter,79
+mushrooms,75
+clove garlic,69
+oregano,64
+bell pepper,61
+chili powder,58
+chicken,57
+tomato paste,55
+rice,53
+green onions,53
+vegetable oil,50
+paprika,49
+basil,47
+stalks celery,47
+black pepper,47
+olive oil,42
+cooking oil,41
+red pepper,40
+green peppers,40
+shortening,39
+okra,39
+cayenne pepper,39
+chicken broth,38
+beef broth,37
+bacon,34
+margarine,34
+sugar,34
+bell peppers,28
+beef,23
+garlic powder,20
+sausage,20
+parmesan cheese,19
+oysters,19
+white wine,18
+ground beef,18
+red wine,17
+chicken breasts,16
+soy sauce,16
+ham,15
+cold water,15
+tabasco sauce,14
+beef stew meat,14
+rosemary,13
+curry powder,13
+tomato juice,13
+steak,13
+green onion,12
+oleo,12
+cumin,12
+crab meat,12
+cornstarch,11
+chicken stock,11
+salad oil,11
+velveeta cheese,11
+lemon juice,11
+boiling water,11
+chuck roast,10
+stew meat,10
+crawfish tails,10
+worcestershire,10
+frozen peas,10
+kitchen,10
+garlic salt,10
+kidney beans,10
+ground cumin,9
+cheddar cheese,9
+marjoram,9
+hot sauce,9
+crabmeat,9
+vinegar,9
+shallots,9
+beef cubes,8
+stew beef,8
+lemon,8
+carrot,8
+fresh mushrooms,8
+celery stalks,8
+beef stock,8
+fat,8
+lard,8
+cloves,8
+ground cloves,8
+file,8
+beer,7
+almonds,7
+fryer,7
+peeled shrimp,7
+gumbo file,7
+beef chuck,7
+parsley flakes,7
+cinnamon,7
+noodles,7
+brown sugar,7
+red wine vinegar,7
+whole kernel corn,7
+wine,7
+raisins,6
+beef bouillon,6
+tomato,6
+chili sauce,6
+green chilies,6
+fresh parsley,6
+mozzarella cheese,6
+bacon drippings,6
+beef round steak,6
+onion,6
+peas,6
+cabbage,6
+tomato puree,6
+ro-tel tomatoes,6
+beans,6
+crawfish,6
+bacon grease,6
+peppers,6
+corn,6
+lean ground beef,6
+cider vinegar,6
+bread crumbs,6
+ketchup,6
+green bell peppers,6
+freshly ground black pepper,6
+pinto beans,6
+dry mustard,6
+crabs,5
+red peppers,5
+egg,5
+milk,5
+allspice,5
+eggs,5
+red bell pepper,5
+accent,5
+sour cream,5
+zucchini,5
+bacon fat,5
+onion tops,5
+sherry,5
+sage,5
+ground black pepper,5
+pork chops,5
+ground meat,5
+green beans,5
+meat,4
+suet,4
+hamburger,4
+lemon slice,4
+catsup,4
+olives,4
+salt pork,4
+white potatoes,4
+frozen okra,4
+ground red pepper,4
+cayenne,4
+crisco,4
+cream,4
+chicken bouillon cubes,4
+green bell pepper,4
+sweet basil,4
+round steak,4
+hot pepper sauce,4
+ginger,4
+red,4
+white pepper,4
+wesson oil,4
+ro-tel,3
+bouillon,3
+egg noodles,3
+cream of mushroom soup,3
+mushroom soup,3
+fresh fish,3
+clam juice,3
+lemons,3
+chives,3
+squirrels,3
+pork,3
+fish stock,3
+grated cheese,3
+red kidney,3
+currants,3
+baking powder,3
+cheese,3
+ground pork,3
+broth,3
+mustard,3
+boneless round steak,3
+hot pepper,3
+rabbits,3
+tomato soup,3
+chickens,3
+venison,3
+fettucini noodles,3
+fresh okra,3
+brandy,3
+crab boil,3
+sweet peas,3
+pepper sauce,3
+beef roast,3
+italian seasoning,3
+freshly ground pepper,3
+turmeric,3
+leeks,3
+fresh shrimp,3
+bouquet garni,3
+peppercorns,3
+heavy cream,3
+tarragon,3
+perrins,3
+tabasco,3
+jalapeno peppers,3
+chicken bouillon,3
+burgundy,3
+chilies,3
+lean beef,3
+file powder,2
+meal,2
+white,2
+eggplant,2
+cream of chicken soup,2
+pineapple,2
+fettucine noodles,2
+boneless beef chuck,2
+fish fillets,2
+chili pepper,2
+curry,2
+veal,2
+chicken pieces,2
+venison roast,2
+apples,2
+marjoram leaves,2
+onion soup,2
+pork sausage,2
+boneless pork,2
+black,2
+goose,2
+brisket,2
+pimento,2
+barbecue sauce,2
+white onions,2
+beef round,2
+molasses,2
+green olives,2
+drippings,2
+cheddar,2
+seafood seasoning,2
+fresh ground pepper,2
+chuck steak,2
+frozen corn,2
+celery stalk,2
+bread,2
+cilantro,2
+black olives,2
+red bell peppers,2
+american cheese,2
+jalapeno cheese,2
+fryer chicken,2
+white rice,2
+chickpeas,2
+caraway seed,2
+cornmeal,2
+chicken gizzards,2
+venison meat,2
+steak sauce,2
+italian salad dressing,2
+cut okra,2
+meat stock,2
+other red wine,2
+onion soup mix,2
+boneless venison,2
+apple juice,2
+ground pepper,2
+yeast,2
+cooking sherry,2
+warm milk,2
+fresh peas,2
+cucumbers,2
+celery salt,2
+sweet red pepper,2
+apple cider,2
+green bean,2
+fresh chopped parsley,2
+lean beef chuck,2
+lean stew meat,2
+kernel corn,2
+macaroni,2
+gizzards,2
+hen,2
+white onion,2
+pork shoulder,2
+lean pork,2
+italian plum tomatoes,2
+claret,2
+chuck,2
+condensed beef broth,2
+spinach,2
+fryers,2
+ground coriander,2
+ground chuck,2
+mint,2
+italian sausage,2
+dill,2
+chicken breast,2
+hot sausage,2
+regular long grain rice,2
+pinto,2
+quail,1
+peanut oil,1
+beef flavored gravy base,1
+potato,1
+crusty bread,1
+chicken giblets,1
+washed,1
+frankfurters,1
+beef stew,1
+fresh cilantro,1
+cream of celery,1
+leaf marjoram,1
+pearl onions,1
+california,1
+instant chicken,1
+roast,1
+hock,1
+jalapeno chili,1
+veal cubes,1
+veal cutlets,1
+dried basil,1
+thin slices,1
+boneless lamb,1
+cooking fat,1
+fresh oysters,1
+soda,1
+white vinegar,1
+limes,1
+lobster,1
+baby clams,1
+claw crabmeat,1
+boston lettuce,1
+fresh green beans,1
+trout,1
+sirloin steak,1
+lean steak,1
+mozzarella,1
+red onion,1
+herbs,1
+orange rind,1
+beaten egg,1
+celery soup,1
+ground nutmeg,1
+vegetable juice,1
+red cooking wine,1
+del monte cream-style,1
+yellow cream,1
+beef bouillon cubes,1
+beef brisket,1
+lima beans,1
+will,1
+cold coffee,1
+crab claws,1
+stewing hen,1
+pan drippings,1
+del monte,1
+coriander powder,1
+veg-all,1
+parkay margarine,1
+heinz ketchup,1
+lean ground chuck,1
+regular salt,1
+lemon slices,1
+sausages,1
+fresh thyme,1
+apple,1
+clear beef,1
+ground chili pepper,1
+boneless beef chuck roast,1
+green chilis,1
+apple cider vinegar,1
+nonstick spray coating,1
+food coloring,1
+cream of tartar,1
+solid shortening,1
+cream-style,1
+broilers,1
+chicken livers,1
+white turnips,1
+ham pieces,1
+red kidney beans,1
+rump roast,1
+poultry seasonings,1
+freshly cooked rice,1
+veal stew meat,1
+ground thyme,1
+collard greens,1
+turnip greens,1
+mustard greens,1
+frozen carrots,1
+fatback,1
+nutmeg,1
+round beef,1
+lemon rind,1
+chicken parts,1
+spaghetti,1
+ripe olives,1
+madeira wine,1
+pork tenderloins,1
+shoulder,1
+sweet,1
+andouille sausage,1
+fish,1
+acorn,1
+catfish fillets,1
+dill weed,1
+coffee,1
+tortillas,1
+elbow macaroni,1
+banana peppers,1
+generous,1
+campbell's beef broth,1
+crab claw meat,1
+wagon wheel pasta,1
+crisco oil,1
+tamari,1
+orange juice,1
+chicken base,1
+red cayenne pepper,1
+baby lima beans,1
+drops,1
+wine vinegar,1
+cucumber,1
+corn meal,1
+thin,1
+frozen lima beans,1
+artichoke hearts,1
+heavy whipping cream,1
+millet,1
+boneless stew meat,1
+long grain rice,1
+thin spaghetti,1
+venison steak,1
+italian,1
+chicken tenders,1
+crab,1
+lump crabmeat,1
+tahini,1
+frozen,1
+white kidney beans,1
+regular barley,1
+navy beans,1
+leftover meat,1
+pork blade,1
+low-fat sour cream,1
+corn oil,1
+stewing chicken,1
+fresh coriander,1
+bitters,1
+cumin powder,1
+lime,1
+honey,1
+garlic juice,1
+fryer chickens,1
+bay seasoning,1
+cajun seasoning,1
+barley,1
+hot picante sauce,1
+longhorn cheese,1
+browning sauce,1
+beef gravy,1
+shredded cheese,1
+leaf oregano,1
+tapioca,1
+pimentos,1
+ground turkey,1
+sirloin,1
+angel hair pasta,1
+rolls,1
+crawfish fat,1
+cayenne red pepper,1
+cream of potato soup,1
+sugar snap peas,1
+italian tomatoes,1
++,1
+water chestnuts,1
+tenderloin,1
+boneless chicken,1
+fresh oregano,1
+fresh basil,1
+fennel,1
+t,1
+lean stew beef,1
+grease,1
+jumbo lump crabmeat,1
+ground round,1
+white sugar,1
+veal shoulder,1
+wide egg noodles,1
+beef rump roast,1
+your choice,1
+deer roast,1
+heavy whipped cream,1
+chervil,1
+velveeta pasteurized process cheese spread,1
+kielbasa,1
+red burgundy wine,1
+hot water,1
+grated sharp,1
+poultry seasoning,1
+pastry,1
+prunes,1
+stout,1
+chachere,1
+accent seasoning,1
+mixed vegetables,1
+green hot peppers,1
+hot mashed potatoes,1
+vegetable juice cocktail,1
+instant beef bouillon granules,1
+dressing,1
+broccoli,1
+chicken strips,1
+sherry wine,1
+pepperoni,1
+cannellini beans,1
+plain yogurt,1
+coconut milk,1
+green chiles,1
+cumin seeds,1
+ground turmeric,1
+sweet potato,1
+yellow onions,1
+frozen green peas,1
+non-fat sour cream,1
+bean liquid,1
+cauliflower,1
+tart apples,1
+rabbit,1
+glass,1
+guacamole,1
+shredded lettuce,1
+corn tortillas,1
+leek,1
+white cooking wine,1
+shrimp boil,1
+'s seasoning,1
+cognac,1
+fresh mushroom,1
+seafood,1
+stock,1
+chili beans,1
+whipping cream,1
+unsalted butter,1
+crab and,1
+clean shrimp,1
+bottles,1
+boiling onions,1
+cranberries,1
+canola oil,1
+lamb,1
+pumpkin,1
+leaf basil,1
+fresh broccoli flowerets,1
+linguine,1
+dried leaf thyme,1
+dark brown sugar,1
+sauterne wine,1
+sauce,1
+jalapeno relish,1
+uncle ben,1
+white wine vinegar,1
+horseradish,1
+saffron,1
+sweet paprika,1
+head,1
+mushroom pieces,1
+green and,1
+jalapeno pepper,1
+ground white pepper,1
+elephant,1
+onion salt,1
+buttered bread crumbs,1
+white shoe peg,1
+bunches shallots,1
+blanched almonds,1
+lean hamburg,1
+dough,1
+brown gravy mix,1
+marsala wine,1
+anaheim chilies,1
+scallions,1
+gravy,1
+fresh vegetables,1
+boneless beef,1
+chile,1
+oxtail,1
+tasso,1
+pimiento,1
+creole seasoning,1
+andouille,1
+tomato ketchup,1
+pearl barley,1
+season,1
+pork chop,1
+dumplings,1
+frying chickens,1
+beef bouillon granules,1
+olive,1
+italian stewed tomatoes,1
+mostaccioli,1
+lean beef stew meat,1
+wedges,1
+hot peppers,1
+tenderloins,1
+stewing beef,1
+baking soda,1
+hot roll,1
+cayenne powder,1
+bean sprouts,1
+light,1

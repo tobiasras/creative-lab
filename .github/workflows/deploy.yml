@@ -1,0 +1,35 @@
+name: Deploy lab.tobiasras.dk
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-lab
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy via rsync over SSH
+        uses: burnett01/rsync-deployments@7.0.2
+        with:
+          switches: >-
+            -avz --delete
+            --exclude '.git'
+            --exclude '.github'
+            --exclude '.gitignore'
+            --exclude 'README.md'
+            --exclude 'node_modules'
+          path: ./
+          remote_path: ${{ secrets.DEPLOY_PATH }}/
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          # Defaults to 22. Add a SSH_PORT secret and uncomment if needed:
+          # remote_port: ${{ secrets.SSH_PORT }}
