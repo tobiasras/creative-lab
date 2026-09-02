@@ -14,7 +14,7 @@ const camera = new THREE.PerspectiveCamera(
     0.5,
     100
 );
-camera.position.set(0, 0, 35);
+camera.position.set(0, 0, 55);
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -46,11 +46,6 @@ if (window.visualViewport) {
     window.visualViewport.addEventListener('resize', resize);
 }
 
-
-
-
-
-
 const row = 8;
 const spacing = 5;
 const offset = (row - 1) * spacing / 2;
@@ -75,8 +70,8 @@ geometry.setAttribute(
 );
 
 const material = new THREE.PointsMaterial({
-    color: 0xff0000,
-    size: 0.12,
+    color: 0x000000,
+    size: 0.5,
     sizeAttenuation: true
 });
 
@@ -92,7 +87,6 @@ const positions = geometry.attributes.position.array;
 
 const env = {
     gravity: 1.55,
-    center_strenth: 0.0001,
     orbs: new Array(row * row * row).fill().map((_, i) => {
         return {
             x: positions[i * 3],
@@ -129,7 +123,7 @@ function calc_force(orb_1, orb_2) {
     };
 }
 
-const max_distance = 5.1;
+const max_distance = 5;
 
 
 
@@ -145,13 +139,11 @@ function compute_force() {
             let orb_i = env.orbs[i]
             let orb_j = env.orbs[j]
 
-
             const distance = Math.sqrt((orb_i.x - orb_j.x) ** 2 + (orb_i.y - orb_j.y) ** 2 + (orb_i.z - orb_j.z) ** 2);
 
             if (distance > max_distance) {
                 continue;
             } else {
-
                 const { Fx, Fy, Fz } = calc_force(orb_i, orb_j)
             
                 env.orbs[i].force_x += Fx;
@@ -161,29 +153,15 @@ function compute_force() {
                 env.orbs[j].force_x -= Fx;
                 env.orbs[j].force_y -= Fy;
                 env.orbs[j].force_z -= Fz;
-
-
-
             }
-
-
-
-
         }
     }
 }
             
-
-
-
-
 function update(dt) {
     compute_force();
     update_orbs(dt);
 }
-
-
-
 
 function update_orbs(dt) {
     // Update motion
@@ -196,24 +174,9 @@ function update_orbs(dt) {
         orb.velocity_y += orb.accelerations_y * dt;
         orb.velocity_z += orb.accelerations_z * dt;
 
-
-        /*
-        const damping = 0.99;
-
-        orb.velocity_x *= damping
-        orb.velocity_y *= damping
-        orb.velocity_z *= damping
-        */
-
-
-
-
         orb.x += orb.velocity_x * dt;
         orb.y += orb.velocity_y * dt;
         orb.z += orb.velocity_z * dt;
-        
-
-
 
         positions[env.orbs.indexOf(orb) * 3] = orb.x;       
         positions[env.orbs.indexOf(orb) * 3 + 1] = orb.y;
@@ -222,10 +185,24 @@ function update_orbs(dt) {
 }
 
 
+const tempColor = new THREE.Color();
+
+function getColor(x, y, z) {
+
+    const radius = Math.sqrt(x*x + y*y + z*z);
+    const t = Math.min(radius / 35, 1);
+
+    // Rainbow based on distance from origin
+    tempColor.setHSL(0.7 * (0 - t), 1.0, 0.5);
+
+    return tempColor;
+}
+
 
 function updateLines() {
 
     const positions = lineGeometry.attributes.position.array;
+    const colors = lineGeometry.attributes.color.array;
 
     let index = 0;
 
@@ -243,49 +220,81 @@ function updateLines() {
 
             const distSq = dx * dx + dy * dy + dz * dz;
 
-            if (distSq < maxDistSq) {
-                positions[index++] = a.x;
-                positions[index++] = a.y;
-                positions[index++] = a.z;
+            if (distSq > maxDistSq)
+                continue;
 
-                positions[index++] = b.x;
-                positions[index++] = b.y;
-                positions[index++] = b.z;
-            }
+            // positions
+            positions[index]     = a.x;
+            positions[index + 1] = a.y;
+            positions[index + 2] = a.z;
+
+            positions[index + 3] = b.x;
+            positions[index + 4] = b.y;
+            positions[index + 5] = b.z;
+
+            // color for first endpoint
+            let c = getColor(a.x, a.y, a.z);
+
+            colors[index]     = c.r;
+            colors[index + 1] = c.g;
+            colors[index + 2] = c.b;
+
+            // color for second endpoint
+            c = getColor(b.x, b.y, b.z);
+
+            colors[index + 3] = c.r;
+            colors[index + 4] = c.g;
+            colors[index + 5] = c.b;
+
+            index += 6;
         }
     }
 
     lineGeometry.setDrawRange(0, index / 3);
     lineGeometry.attributes.position.needsUpdate = true;
+    lineGeometry.attributes.color.needsUpdate = true;
 }
 
 
 
-
-const maxDistance = 5.0;
+const maxDistance = 8.0;
 const maxDistSq = maxDistance * maxDistance;
 
-const linePositions = new Float32Array(env.orbs.length * env.orbs.length * 6);
+const MAX_CONNECTIONS = env.orbs.length * (env.orbs.length - 1) / 2;
+
+const linePositions = new Float32Array(MAX_CONNECTIONS * 2 * 3);
+const lineColors = new Float32Array(MAX_CONNECTIONS * 2 * 3);
+
 const lineGeometry = new THREE.BufferGeometry();
 
 lineGeometry.setAttribute(
-    'position',
+    "position",
     new THREE.BufferAttribute(linePositions, 3)
 );
 
-lineGeometry.setDrawRange(0, 0);
+lineGeometry.setAttribute(
+    "color",
+    new THREE.BufferAttribute(lineColors, 3)
+);
 
 const lineMaterial = new THREE.LineBasicMaterial({
-    color: 0xff0000,
+    vertexColors: true,
     transparent: true,
-    opacity: 0.15
+    opacity: 0.7
 });
 
 const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
 scene.add(lines);
 
-const clock = new THREE.Clock();
 
+
+
+lineGeometry.setDrawRange(0, 0);
+
+scene.fog = new THREE.Fog(0x000000, 15, 100);
+
+
+const clock = new THREE.Clock();
 
 function animate() {
     requestAnimationFrame(animate);
