@@ -1,5 +1,5 @@
 import {createBoard} from "./chessboard.js";
-import {animateLoop, scene, retrieveTileOnClick} from "./threeSettings.js";
+import {animateLoop, scene, retrieveTileOnClick, restoreCameraSnapshot, snapshotCamera} from "./threeSettings.js";
 import {UIController} from "./ui.js";
 import {
     checkCheckmate,
@@ -59,13 +59,10 @@ let gameHasStarted = false
 
 
 
-document.onmousedown = (event) => {
-    if (event.button !== 0)
-        return
+const CLICK_THRESHOLD_PX = 5;
+let boardPress = null;
 
-    if (event.target.closest('.nav, .menu, .slide-menu')) {
-        return
-    }
+function handleTileClick(event) {
     const tileModel = retrieveTileOnClick(event)
     if (!tileModel)
         return;
@@ -153,6 +150,36 @@ document.onmousedown = (event) => {
 
 
 
+
+document.addEventListener('pointerdown', (event) => {
+    if (event.button !== 0) {
+        return;
+    }
+    if (event.target.closest?.('.nav, .menu, .slide-menu')) {
+        return;
+    }
+    boardPress = {x: event.clientX, y: event.clientY};
+    snapshotCamera();
+});
+
+document.addEventListener('pointerup', (event) => {
+    if (!boardPress || event.button !== 0) {
+        return;
+    }
+    const start = boardPress;
+    boardPress = null;
+    const dx = event.clientX - start.x;
+    const dy = event.clientY - start.y;
+    if (dx * dx + dy * dy > CLICK_THRESHOLD_PX * CLICK_THRESHOLD_PX) {
+        return;
+    }
+    restoreCameraSnapshot();
+    handleTileClick({clientX: start.x, clientY: start.y});
+});
+
+document.addEventListener('pointercancel', () => {
+    boardPress = null;
+});
 
 ui.setNormalStartFunc(() => startGame({freePlay: false}))
 ui.setFreePlayStartFunc(() => startGame({freePlay: true}))

@@ -18,10 +18,22 @@ function threeJsSetup() {
     camera.position.z = 5;
     controls.update();
     controls.mouseButtons = {
-        RIGHT: THREE.MOUSE.ROTATE
+        LEFT: THREE.MOUSE.ROTATE,
+        RIGHT: THREE.MOUSE.ROTATE,
     }
     controls.enablePan = false;
     controls.maxDistance = 25;
+
+    // macOS secondary click sets ctrlKey. OrbitControls treats ROTATE+modifier as pan,
+    // which is disabled. PAN+modifier takes the rotate branch instead.
+    renderer.domElement.addEventListener('pointerdown', (event) => {
+        if (event.button !== 2) {
+            return;
+        }
+        const modifierClick = event.ctrlKey || event.metaKey || event.shiftKey;
+        controls.mouseButtons.RIGHT = modifierClick ? THREE.MOUSE.PAN : THREE.MOUSE.ROTATE;
+    }, true);
+
     return controls;
 }
 
@@ -36,6 +48,24 @@ const FACE_CAMERA_VIEWS = {
     5: {position: [0, -5, 0], target: [0, 0, 0]},
     6: {position: [0, 0, -5], target: [0, 0, 0]},
 };
+
+let viewSnapshot = null;
+
+export function snapshotCamera() {
+    viewSnapshot = {
+        position: camera.position.clone(),
+        target: controls.target.clone(),
+    };
+}
+
+export function restoreCameraSnapshot() {
+    if (!viewSnapshot) {
+        return;
+    }
+    camera.position.copy(viewSnapshot.position);
+    controls.target.copy(viewSnapshot.target);
+    controls.update();
+}
 
 export function focusCameraOnSide(sideNumber) {
     const view = FACE_CAMERA_VIEWS[sideNumber];
